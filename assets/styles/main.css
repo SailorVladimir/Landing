@@ -1,0 +1,208 @@
+/* шрифты старт */
+
+@font-face {
+    font-family: "Parangon-530C";
+    src: url("../fonts/Parangon-530C.otf") format("opentype")
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+
+/* шрифты конец */
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1245px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: "Parangon-530C";
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    margin: 0px 51px;
+}
+
+p {
+    margin: 0;
+}
+
+.tagline {
+    margin: 20px 160px 0px;
+}
+
+.section--banner {
+    background: no-repeat;
+    background-size: cover;
+    background-image: url(../images/main.png);
+    color: #fff;
+    padding: 185px 0px 125px;
+}
+
+.section--banner p {
+    font-family: 'PT Sans Caption', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    max-width: 857px;
+    margin: 65px auto 0px;
+}
+
+.statistic {
+    position: relative;
+    width: 246px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    outline: 2px solid #fff;
+}
+
+.statistic__icon--star {
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    width: 37px;
+    height: 35px;
+    background: no-repeat;
+    background-image: url(../images/favourite24.png);
+}
+
+.statistic__icon--leaflet {
+    position: absolute;
+    z-index: 1;
+    top: -17px;
+    width: 40px;
+    height: 40px;
+    background: no-repeat;
+    background-image: url(../images/tasks3.png);
+}
+
+.statistic__icon--diamond {
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    width: 40px;
+    height: 40px;
+    background: no-repeat;
+    background-image: url(../images/accessory32.png);
+}
+
+.statistic__number {
+    font-family: "Parangon 530C";
+    font-size: 48px;
+    margin-top: 42px;
+}
+
+.statistic__title {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 18px;
+    padding-bottom: 34px;
+    text-align: center;
+}
+
+
+
+
+/*************************media*******************************/
+
+
+@media (max-width: 1200px) {
+    .section--banner {
+        padding: 100px 0px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .tagline {
+        margin: 20px 50px 0px;
+    }
+
+    .statistics {
+        margin: 65px 50px 0px;
+    }
+
+    .statistic {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section--banner {
+        padding: 50px 0px;
+    }
+
+    h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .tagline {
+        margin: 20px 20px 0px;
+    }
+
+    .section--banner p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .statistics {
+        margin: 65px 20px 0px;
+    }
+
+    .statistic {
+        width: 160px;
+    }
+
+    .statistic__number {
+        font-size: 36px;
+        margin-top: 36px;
+    }
+
+    .statistic__title {
+        font-size: 16px;
+    }
+
+    .statistic {
+        width: 160px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    h1{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .tagline {
+        margin: 20px 5px 0px;
+    }
+
+    .section--banner p{
+        line-height: 20px;
+    }
+
+    .statistics{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistic{
+        margin-bottom: 40px;
+        width: 200px;
+    }
+}
