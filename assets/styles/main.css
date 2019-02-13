@@ -15,7 +15,14 @@
     src: url("../fonts/HelveticaNeueCyr-Bold.ttf") format("opentype")
 }
 
+@font-face {
+    font-family: "HelveticaNeueCyr-Roman";
+    src: url("../fonts/HelveticaNeueCyr-Roman.ttf") format("opentype")
+}
+
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700&subset=cyrillic');
 
 /* шрифты конец */
 
@@ -40,6 +47,11 @@ h1 {
     line-height: 72px;
     text-align: center;
     margin: 0px 51px;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
 }
 
 h3 {
@@ -170,7 +182,7 @@ p {
 
 .section--description {
     padding-top: 167px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
 
 }
 
@@ -283,6 +295,22 @@ p {
     cursor: pointer;
 }
 
+.section--credo {
+    background-image: url(../images/credo.png);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 195px;
+}
+
+.container__text--credo{
+    font-family: "HelveticaNeueCyr-Roman";
+    font-size: 24px;
+    padding: 15px 100px 0px;
+    line-height: 1.4em;
+}
+
 /*************************media*******************************/
 
 
@@ -302,6 +330,14 @@ p {
 
     .container--description {
         margin-bottom: 167px;
+    }
+
+    .section--description{
+        padding-bottom: 167px;
+    }
+
+    .section--credo{
+        padding-bottom: 80px;
     }
 
 }
@@ -338,14 +374,20 @@ p {
 
     .section--description {
         padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .section__headline--description:before {
-        left: 150px;
+        left: 140px;
     }
 
     .container--description{
         margin-bottom: 100px;
+    }
+
+    .container__text--credo{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -414,6 +456,7 @@ p {
 
     .section--description {
         padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .section__headline--description {
@@ -439,6 +482,10 @@ p {
 
     .services--promotion{
         margin-bottom: 40px;
+    }
+
+    .container__title--credo{
+        margin-top: 0;
     }
 }
 
@@ -527,6 +574,22 @@ p {
 
     .services__price a {
         margin-right: 15px;
+    }
+
+    .container__title--credo{
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .container__text--credo{
+        font-size: 20px;
+        line-height: 1.2em;
+        text-align: justify;
+    }
+
+    .section--credo{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
 }
