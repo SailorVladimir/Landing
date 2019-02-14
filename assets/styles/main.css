@@ -11,6 +11,12 @@
 }
 
 @font-face {
+    font-family: "Futura Md BT Bold";
+    src: url("../fonts/Futura-Md-BT-Bold.ttf") format("opentype")
+}
+
+
+@font-face {
     font-family: "HelveticaNeueCyr-Bold";
     src: url("../fonts/HelveticaNeueCyr-Bold.ttf") format("opentype")
 }
@@ -19,6 +25,17 @@
     font-family: "HelveticaNeueCyr-Roman";
     src: url("../fonts/HelveticaNeueCyr-Roman.ttf") format("opentype")
 }
+
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("../fonts/MyriadPro-Regular.ttf") format("opentype")
+}
+
+@font-face {
+    font-family: "Exo-2.0-Bold";
+    src: url("../fonts/Exo-2.0-Bold.otf") format("opentype")
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
 
@@ -35,7 +52,6 @@ body {
     max-width: 1245px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -49,8 +65,8 @@ h1 {
     margin: 0px 51px;
 }
 
-h2{
-    font-family: 'Open Sans', sans-serif;
+h2 {
+    font-family: "Exo-2.0-Bold";
     font-size: 50px;
 }
 
@@ -304,15 +320,204 @@ p {
     padding-bottom: 195px;
 }
 
-.container__text--credo{
+.container__text--credo {
     font-family: "HelveticaNeueCyr-Roman";
     font-size: 24px;
     padding: 15px 100px 0px;
     line-height: 1.4em;
 }
 
+/* .container__title--price{
+    font-family: "Parangon-530C";
+    font-size: 50px;
+    color: #fff;
+    position: relative;
+    top: 80px;
+} */
+
+.section--price {
+    padding-bottom: 176px;
+    position: relative;
+}
+
+.section--price:before {
+    content: "Разработка";
+    font-size: 50px;
+    color: #fff;
+    font-family: "Parangon 530C";
+    background-image: url(../images/development.png);
+    background-repeat: no-repeat;
+    width: 673px;
+    height: 527px;
+    position: absolute;
+    top: -254px;
+    padding-top: 127px;
+    padding-left: 137px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 207px;
+    padding: 0px 60px;
+    position: relative;
+}
+
+.card {
+    width: 362px;
+    height: 320px;
+    text-align: left;
+}
+
+.card__title--landing-page {
+    font-family: "Futura Md BT Bold";
+    font-size: 50.55px;
+    text-align: left;
+    padding: 69px 32px 5px;
+    line-height: 50px;
+}
+
+.card--landing-page {
+    background-image: url(../images/landing-page.png);
+    border-radius: 0;
+    background-repeat: no-repeat;
+}
+
+.card--web-site {
+    background-image: url(../images/web-site.png);
+    border-radius: 0;
+    background-repeat: no-repeat;
+}
+
+.card--online-store {
+    background-image: url(../images/online-store.png);
+    border-radius: 0;
+    background-repeat: no-repeat;
+}
+
+.cost {
+    font-family: "MyriadPro-Regular";
+    font-size: 24.27px;
+}
+
+.card__title--web-site {
+    font-family: "Exo-2.0-Bold";
+    font-size: 50.54px;
+    padding: 65px 20px 0px;
+}
+
+.card__title--online-store {
+    font-family: "Exo-2.0-Bold";
+    font-size: 50.55px;
+    padding: 60px 26px 0px;
+}
+
+.hr__card {
+    height: 1px;
+    background-color: #fff;
+
+}
+
+.hr__card--landing-page {
+    margin-top: 8px;
+    margin-left: 34px;
+    margin-right: 55px;
+}
+
+.hr__card--web-site {
+    margin-top: 51px;
+    margin-left: 27px;
+    margin-right: 57px;
+}
+
+.hr__card--online-store {
+    margin-top: 0px;
+    margin-left: 24px;
+    margin-right: 59px;
+}
+
+.card__price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 36px;
+
+}
+
+.card__price--web-site {
+    padding-left: 39px;
+}
+
+.card__price--online-store {
+    padding-left: 28px;
+}
+
+.card__price span:hover {
+    cursor: pointer;
+}
+
+.cost {
+    font-size: 24.27px;
+}
+
+.cost--landing-page {
+    border: 2px solid #00b9e7;
+    padding: 9px 27px;
+    padding-bottom: 10px;
+}
+
+.cost--web-site {
+    border: 2px solid #ffcb00;
+    padding: 8px 28px 13px;
+}
+
+.cost--online-store {
+    border: 2px solid #66bf0d;
+    padding: 7px 27px 11px;
+}
+
+.arrow--blue {
+    padding-top: 11px;
+    padding-right: 31px;
+}
+
+.arrow--white {
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*************************media*******************************/
 
+
+@media (max-width: 1300px) {
+    .card {
+        width: 33%;
+    }
+
+    .section--price:before{
+        width: 500px;
+    }
+}
 
 @media (max-width: 1200px) {
     .section--banner {
@@ -332,12 +537,72 @@ p {
         margin-bottom: 167px;
     }
 
-    .section--description{
+    .section--description {
         padding-bottom: 167px;
     }
 
-    .section--credo{
+    .section--credo {
         padding-bottom: 80px;
+    }
+
+    .cards {
+        padding: 0px 10px;
+    }
+
+    .card {}
+
+    .card__title--landing-page {
+        font-size: 44px;
+        padding: 41px 20px 5px;
+        line-height: 42px;
+    }
+
+    .card__title--web-site {
+        font-size: 44px;
+        padding: 30px 20px 0px;
+    }
+
+    .card__title--online-store {
+        font-size: 44px;
+        padding: 25px 26px 0px;
+    }
+
+    .cost {
+        font-size: 20px;
+    }
+
+    .card__price {
+        padding-top: 65px;
+        padding-left: 20px;
+    }
+
+    .arrow--blue {
+        padding-top: 6px;
+    }
+
+    .arrow--white {
+        padding-top: 7px;
+    }
+
+    .hr__card--landing-page {
+        margin-left: 20px;
+    }
+
+    .hr__card--web-site {
+        margin-top: 54px;
+        margin-left: 19px;
+    }
+
+    .hr__card--online-store {
+        margin-top: 6px;
+    }
+
+    .cost--online-store {
+        padding: 10px 27px 11px;
+    }
+
+    .section--price:before {
+        width: 450px;
     }
 
 }
@@ -381,14 +646,75 @@ p {
         left: 140px;
     }
 
-    .container--description{
+    .container--description {
         margin-bottom: 100px;
     }
 
-    .container__text--credo{
+    .container__text--credo {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .card {}
+
+    .card__title--landing-page {
+        font-size: 40px;
+        padding: 35px 10px 5px;
+    }
+
+    .card__title--web-site {
+        font-size: 40px;
+        padding: 30px 10px 0px;
+    }
+
+    .card__title--online-store {
+        font-size: 40px;
+        padding: 28px 10px 0px;
+    }
+
+    .hr__card--landing-page {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .hr__card--web-site {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .hr__card--online-store {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .card__price {
+        padding-top: 100px;
+    }
+
+    .cost--landing-page {
+        padding: 9px 10px;
+    }
+
+    .cost--web-site {
+        padding: 8px 10px 10px;
+    }
+
+    .cost--online-store {
+        padding: 10px 10px;
+    }
+
+    .arrow--blue {
+        padding-right: 10px;
+    }
+
+    .arrow--white {
+        padding-right: 10px;
+    }
+
+    .section--price:before {
+        width: 380px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -442,7 +768,7 @@ p {
         font-size: 24px;
     }
 
-    .container--description{
+    .container--description {
         margin-bottom: 70px;
     }
 
@@ -472,20 +798,101 @@ p {
         top: -160px;
     }
 
-    .container--services{
+    .container--services {
         flex-direction: column;
     }
 
-    .services--star{
+    .services--star {
         margin-bottom: 25px;
     }
 
-    .services--promotion{
+    .services--promotion {
         margin-bottom: 40px;
     }
 
-    .container__title--credo{
+    .container__title--credo {
         margin-top: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .card {
+        width: 362px;
+    }
+
+    .card--landing-page {
+        margin-bottom: 20px;
+    }
+
+    .card--web-site {
+        margin-bottom: 20px;
+    }
+
+    .card__title--landing-page {
+        font-size: 50.55px;
+        padding: 69px 32px 5px;
+        line-height: 50px;
+    }
+
+    .hr__card--landing-page {
+        margin-top: 8px;
+        margin-left: 34px;
+        margin-right: 55px;
+    }
+
+    .cost--landing-page {
+        padding: 9px 27px;
+        padding-bottom: 10px;
+    }
+
+    .card__price {
+        padding-top: 40px;
+        padding-left: 36px;
+    }
+
+    .arrow--blue {
+        padding-top: 11px;
+        padding-right: 31px;
+    }
+
+    .arrow--white {
+        padding-top: 15px;
+        padding-right: 30px;
+    }
+
+    .card__title--web-site {
+        font-size: 50.54px;
+        padding: 65px 20px 0px;
+    }
+
+    .hr__card--web-site {
+        margin-top: 51px;
+        margin-left: 27px;
+        margin-right: 57px;
+    }
+
+    .card__title--online-store {
+        font-size: 50.55px;
+        padding: 60px 26px 0px;
+    }
+
+    .hr__card--online-store {
+        margin-top: 0px;
+        margin-left: 24px;
+        margin-right: 59px;
+    }
+
+
+    .cost--online-store {
+        padding: 7px 27px 11px;
+    }
+
+    .section--price:before{
+        content: none;
     }
 }
 
@@ -551,7 +958,7 @@ p {
         text-align: justify;
     }
 
-    .services--star{
+    .services--star {
         margin-bottom: 25px;
     }
 
@@ -559,7 +966,7 @@ p {
         padding-right: 0;
     }
 
-    .services--promotion{
+    .services--promotion {
         margin-bottom: 30px;
     }
 
@@ -576,20 +983,24 @@ p {
         margin-right: 15px;
     }
 
-    .container__title--credo{
+    .container__title--credo {
         font-size: 40px;
         margin-bottom: 15px;
     }
 
-    .container__text--credo{
+    .container__text--credo {
         font-size: 20px;
         line-height: 1.2em;
         text-align: justify;
     }
 
-    .section--credo{
+    .section--credo {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .card {
+        width: 300px;
     }
 
 }
