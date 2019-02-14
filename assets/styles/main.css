@@ -336,7 +336,7 @@ p {
 } */
 
 .section--price {
-    padding-bottom: 176px;
+    padding-bottom: 172px;
     position: relative;
 }
 
@@ -487,6 +487,63 @@ p {
     padding-right: 30px;
 }
 
+.container--promotion {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 135px;
+    padding-bottom: 110px;
+}
+
+.promotion {
+    padding-top: 44px;
+    padding-left: 60px;
+    max-width: 600px;
+}
+
+.promotion__title {
+    font-family: "Parangon 530C";
+    font-size: 36px;
+    color: #050505;
+    position: relative;
+}
+
+.promotion__title:before {
+    content: "BE THE FIRST";
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 76.55px;
+    color: #dedede;
+    letter-spacing: 0.075em;
+    position: absolute;
+    top: -35px;
+    left: -60px;
+    z-index: -1;
+}
+
+.promotion__text {
+    font-family: Arial;
+    font-size: 24px;
+    color: #000;
+    line-height: 48px;
+    padding-top: 17px;
+}
+
+.search-logo {
+    padding-right: 226px;
+}
+
+.search-logo__google {
+    background-image: url(../images/Google-Partner-Logo-square.png);
+    width: 204px;
+    height: 211px;
+    margin-bottom: 40px;
+}
+
+.search-logo__yandex {
+    background-image: url(../images/yandex-logo.png);
+    width: 204px;
+    height: 222px;
+}
 
 
 
@@ -514,7 +571,7 @@ p {
         width: 33%;
     }
 
-    .section--price:before{
+    .section--price:before {
         width: 500px;
     }
 }
@@ -605,6 +662,21 @@ p {
         width: 450px;
     }
 
+    .container--promotion {
+        margin-left: 90px;
+    }
+
+    .promotion {
+        padding-left: 0;
+    }
+
+    .search-logo {
+        padding-right: 50px;
+    }
+
+    .section--price{
+        padding-bottom: 100px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -713,6 +785,20 @@ p {
 
     .section--price:before {
         width: 380px;
+    }
+
+    .container--promotion {
+        margin-left: 25px;
+    }
+
+    .promotion__title:before {
+        font-size: 66px;
+        top: -25px;
+        left: -31px;
+    }
+
+    .search-logo{
+        padding-right: 25px;
     }
 
 }
@@ -891,8 +977,28 @@ p {
         padding: 7px 27px 11px;
     }
 
-    .section--price:before{
+    .section--price:before {
         content: none;
+    }
+
+    .section--price{
+        padding-bottom: 25px;
+    }
+
+    .container--promotion{
+        flex-direction: column;
+        margin-right: 25px;
+    }
+
+    .search-logo{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    .promotion__text{
+        line-height: 37px;
+        text-align: justify;
     }
 }
 
@@ -1001,6 +1107,33 @@ p {
 
     .card {
         width: 300px;
+    }
+
+    .container--promotion{
+        margin: 0;
+    }
+
+    .promotion__title:before{
+        content: none;
+    }
+
+    .promotion__title {
+        font-size: 27px;
+    }
+
+    .promotion{
+        padding-top: 10px;
+    }
+
+    .promotion__text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .search-logo{
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
     }
 
 }
