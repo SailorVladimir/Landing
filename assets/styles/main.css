@@ -612,7 +612,34 @@ p {
     background: #5a5b81;
 }
 
+.container--adaptability{
+    padding-top: 161px;
+    margin-left: 212px;
+}
 
+.container--adaptability {
+    display: flex;
+}
+
+.adaptability{
+    margin-top: 52px;
+}
+
+
+.adaptability__title {
+    font-family: "Parangon 530C";
+    font-size: 36px;
+    color: #050505;
+    position: relative;
+}
+
+.adaptability__text {
+    font-family: Arial;
+    font-size: 24px;
+    color: #000;
+    line-height: 48px;
+    padding-top: 17px;
+}
 
 
 
@@ -642,6 +669,14 @@ p {
 
     .section--price:before {
         width: 500px;
+    }
+
+    .container--adaptability{
+        margin-left: 100px;
+    }
+
+    .adaptability__img img{
+        width: 560px;
     }
 }
 
@@ -745,6 +780,19 @@ p {
 
     .section--price {
         padding-bottom: 100px;
+    }
+
+    .container--adaptability{
+        margin-left: 90px;
+        padding-top: 100px;
+    }
+
+    .adaptability__text {
+        line-height: 30px;
+    }
+
+    .adaptability__img img {
+        width: 460px;
     }
 }
 
@@ -871,9 +919,37 @@ p {
     }
 
     .projects__title--header:before {
-    font-size: 79px;
-    top: 8px;
+        font-size: 79px;
+        top: 8px;
     }
+
+    .container--adaptability{
+        flex-direction: column;
+        margin-left: 35px;
+        padding-top: 40px;
+    }
+
+    .adaptability__title{
+        text-align: center;
+    }
+
+    .adaptability{
+        margin-right: 35px;
+    }
+
+    .adaptability__img{
+        text-align: right;
+    }
+
+    .adaptability__img{
+        margin-top: 15px;
+    }
+
+    .adaptability__img img{
+        width: 100%;
+    }
+
+    
 
 }
 
@@ -1079,6 +1155,10 @@ p {
         font-size: 65px;
         top: 19px;
     }
+
+    .adaptability__img img{
+        width: 100%;
+    }
 }
 
 
@@ -1219,9 +1299,30 @@ p {
         content: none;
     }
 
-    .projects__title--header{
+    .projects__title--header {
         font-size: 24px;
         padding-top: 49px;
+    }
+
+    .adaptability__title {
+        font-size: 28px;
+    }
+
+    .adaptability{
+        margin: 0;
+    }
+
+    .container--adaptability{
+        margin: 0 15px;
+    }
+
+    .adaptability__text{
+        text-align: justify;
+    }
+
+    .adaptability__text{
+        font-size: 20px;
+        line-height: 25px;
     }
 
 }
