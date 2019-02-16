@@ -731,6 +731,59 @@ p {
     padding-top: 9px;
 }
 
+.container--care {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 102px;
+    padding-bottom: 102px;
+    margin-left: 134px;
+}
+
+.adaptability__title:before{
+    content: "ADAPTATEL";
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 72px;
+    color: #dedede;
+    position: absolute;
+    top: -30px;
+    left: -38px;
+    z-index: -1;
+}
+
+.care {
+    padding-top: 72px;
+    padding-left: 60px;
+    max-width: 600px;
+}
+
+.care__title {
+    font-family: "Parangon 530C";
+    font-size: 36px;
+    color: #050505;
+    position: relative;
+}
+
+.care__title:before{
+    content: "BE CAREFUL";
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 72px;
+    color: #dedede;
+    position: absolute;
+    top: -30px;
+    left: -38px;
+    z-index: -1;
+}
+
+.care__text {
+    font-family: Arial;
+    font-size: 24px;
+    color: #000;
+    line-height: 48px;
+    padding-top: 13px;
+}
+
 
 
 
@@ -888,6 +941,30 @@ p {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .container--care{
+        padding-top: 40px;
+        margin-left: 0px;
+    }
+
+    .care{
+        padding-left: 0;    
+    }
+
+    .care__img img{
+        max-width: 450px;
+    }
+
+    .care__text {
+        line-height: 36px;
+        text-align: justify;
+    }
+
+    .care__title:before{
+        left: -11px;
+    }
+
+    
 }
 
 @media (max-width: 992px) {
@@ -1044,6 +1121,11 @@ p {
         width: 100%;
     }
 
+    .adaptability__title:before{
+        left: 0;
+        right: 0;
+    }
+
     .tradein--cards{
         flex-direction: column;
         align-items: center;
@@ -1055,6 +1137,24 @@ p {
 
     .tradein__text{
         margin-bottom: 30px;
+    }
+
+    .container--care{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .care{
+        max-width: 100%;
+    }
+
+    .care__img img{
+        max-width: 563px;
+    }
+
+    .care__title:before{
+        left: 0;
+        right: 0;
     }
 
 
@@ -1434,6 +1534,10 @@ p {
         line-height: 25px;
     }
 
+    .adaptability__title:before{
+        content: none;
+    }
+
     .tradein--footer button {
         font-size: 20px;
         width: 250px;
@@ -1452,6 +1556,22 @@ p {
 
     .tradein--cards{
         text-align: justify;
+    }
+
+    .care{
+        padding-top: 0;
+    }
+
+    .care__text{
+        line-height: 30px;
+    }
+
+    .care__title:before{
+        content: none;
+    }
+
+    .care__img img{
+        max-width: 100%;
     }
 
 
