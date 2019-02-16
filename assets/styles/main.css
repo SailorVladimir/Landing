@@ -75,6 +75,8 @@ h3 {
     font-size: 48px;
 }
 
+h4 {}
+
 h6 {
     margin: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -545,6 +547,73 @@ p {
     height: 222px;
 }
 
+.projects {
+    background-color: #303263;
+    height: 120px;
+    text-align: center;
+}
+
+.projects__title--header {
+    font-family: "Parangon 530C";
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    padding-top: 43px;
+    position: relative;
+    z-index: 1;
+}
+
+.projects__title--header:before {
+    content: "OUR PROJECTS";
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 96.36px;
+    color: #8a8ba1;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    right: 0;
+    letter-spacing: 5px;
+    z-index: -1;
+}
+
+.projects__row-1 {
+    display: flex;
+    width: 100%;
+}
+
+.projects__row-1 img {
+    width: 100%;
+}
+
+.projects__row-2 {
+    display: flex;
+}
+
+.projects__row-2 img {
+    width: 100%;
+}
+
+.projects--footer button {
+    font-family: "Parangon-530C";
+    background-color: #6a6b8e;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 14px;
+    width: 240px;
+    height: 64px;
+    margin-top: 27px;
+    padding-top: 5px;
+}
+
+.projects--footer button:hover {
+    background: #5a5b81;
+}
+
+
+
 
 
 
@@ -674,7 +743,7 @@ p {
         padding-right: 50px;
     }
 
-    .section--price{
+    .section--price {
         padding-bottom: 100px;
     }
 }
@@ -797,8 +866,13 @@ p {
         left: -31px;
     }
 
-    .search-logo{
+    .search-logo {
         padding-right: 25px;
+    }
+
+    .projects__title--header:before {
+    font-size: 79px;
+    top: 8px;
     }
 
 }
@@ -981,24 +1055,29 @@ p {
         content: none;
     }
 
-    .section--price{
+    .section--price {
         padding-bottom: 25px;
     }
 
-    .container--promotion{
+    .container--promotion {
         flex-direction: column;
         margin-right: 25px;
     }
 
-    .search-logo{
+    .search-logo {
         display: flex;
         justify-content: space-around;
         margin-top: 30px;
     }
 
-    .promotion__text{
+    .promotion__text {
         line-height: 37px;
         text-align: justify;
+    }
+
+    .projects__title--header:before {
+        font-size: 65px;
+        top: 19px;
     }
 }
 
@@ -1109,11 +1188,11 @@ p {
         width: 300px;
     }
 
-    .container--promotion{
+    .container--promotion {
         margin: 0;
     }
 
-    .promotion__title:before{
+    .promotion__title:before {
         content: none;
     }
 
@@ -1121,7 +1200,7 @@ p {
         font-size: 27px;
     }
 
-    .promotion{
+    .promotion {
         padding-top: 10px;
     }
 
@@ -1130,10 +1209,19 @@ p {
         line-height: 30px;
     }
 
-    .search-logo{
+    .search-logo {
         flex-direction: column;
         align-items: center;
         padding-right: 0;
+    }
+
+    .projects__title--header:before {
+        content: none;
+    }
+
+    .projects__title--header{
+        font-size: 24px;
+        padding-top: 49px;
     }
 
 }
