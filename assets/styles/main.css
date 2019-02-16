@@ -36,6 +36,11 @@
     src: url("../fonts/Exo-2.0-Bold.otf") format("opentype")
 }
 
+@font-face {
+    font-family: "UniSansHeavy";
+    src: url("../fonts/UniSansHeavy.ttf") format("opentype")
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
 
@@ -612,8 +617,9 @@ p {
     background: #5a5b81;
 }
 
-.container--adaptability{
+.container--adaptability {
     padding-top: 161px;
+    padding-bottom: 157px;
     margin-left: 212px;
 }
 
@@ -621,7 +627,7 @@ p {
     display: flex;
 }
 
-.adaptability{
+.adaptability {
     margin-top: 52px;
 }
 
@@ -641,6 +647,89 @@ p {
     padding-top: 17px;
 }
 
+.section--tradein {
+    background-image: url(../images/trade-in.png);
+    background-size: cover;
+    color: #fff;
+}
+
+.container--tradein {
+    padding-top: 55px;
+    padding-bottom: 33px;
+    margin-left: 59px;
+    margin-right: 51px;
+    max-width: 1400px;
+}
+
+.tradein--header {
+    font-family: "UniSansHeavy";
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 66px;
+}
+
+.tradein--card {
+    max-width: 433px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.tradein__program {
+    padding-top: 10px;
+}
+
+.tradein__conditions {
+    padding-top: 12px;
+}
+
+.tradein--cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tradein__title-img {
+    display: flex;
+    align-items: center;
+}
+
+.tradein__title {
+    font-family: "Parangon 530C";
+    font-size: 30px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.tradein__text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.tradein__text--progress {
+    margin-top: 10px;
+}
+
+.tradein--footer {
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.tradein--footer button {
+    font-family: "Parangon 530C";
+    font-size: 24px;
+    color: #fff;
+    background-color: #f6ae48;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    height: 63px;
+    width: 337px;
+    padding-top: 9px;
+}
 
 
 
@@ -671,11 +760,11 @@ p {
         width: 500px;
     }
 
-    .container--adaptability{
+    .container--adaptability {
         margin-left: 100px;
     }
 
-    .adaptability__img img{
+    .adaptability__img img {
         width: 560px;
     }
 }
@@ -782,7 +871,7 @@ p {
         padding-bottom: 100px;
     }
 
-    .container--adaptability{
+    .container--adaptability {
         margin-left: 90px;
         padding-top: 100px;
     }
@@ -793,6 +882,11 @@ p {
 
     .adaptability__img img {
         width: 460px;
+    }
+
+    .container--tradein {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -923,33 +1017,47 @@ p {
         top: 8px;
     }
 
-    .container--adaptability{
+    .container--adaptability {
         flex-direction: column;
         margin-left: 35px;
         padding-top: 40px;
+        padding-bottom: 100px;
     }
 
-    .adaptability__title{
+    .adaptability__title {
         text-align: center;
     }
 
-    .adaptability{
+    .adaptability {
         margin-right: 35px;
     }
 
-    .adaptability__img{
+    .adaptability__img {
         text-align: right;
     }
 
-    .adaptability__img{
+    .adaptability__img {
         margin-top: 15px;
     }
 
-    .adaptability__img img{
+    .adaptability__img img {
         width: 100%;
     }
 
-    
+    .tradein--cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tradein--card{
+        max-width: none;
+    }
+
+    .tradein__text{
+        margin-bottom: 30px;
+    }
+
+
 
 }
 
@@ -1156,7 +1264,7 @@ p {
         top: 19px;
     }
 
-    .adaptability__img img{
+    .adaptability__img img {
         width: 100%;
     }
 }
@@ -1308,21 +1416,43 @@ p {
         font-size: 28px;
     }
 
-    .adaptability{
+    .adaptability {
         margin: 0;
     }
 
-    .container--adaptability{
+    .container--adaptability {
         margin: 0 15px;
+        padding-bottom: 50px;
     }
 
-    .adaptability__text{
+    .adaptability__text {
         text-align: justify;
     }
 
-    .adaptability__text{
+    .adaptability__text {
         font-size: 20px;
         line-height: 25px;
     }
+
+    .tradein--footer button {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .container--tradein{
+        padding-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .tradein--header{
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+
+    .tradein--cards{
+        text-align: justify;
+    }
+
 
 }
