@@ -80,8 +80,6 @@ h3 {
     font-size: 48px;
 }
 
-h4 {}
-
 h6 {
     margin: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -127,7 +125,7 @@ p {
     outline: 2px solid #fff;
 }
 
-.statistic__icon{
+.statistic__icon {
     background: no-repeat;
     position: absolute;
     z-index: 1;
@@ -238,7 +236,7 @@ p {
     text-align: left;
 }
 
-.service{
+.service {
     margin-top: 209px;
 }
 
@@ -667,7 +665,7 @@ p {
     justify-content: space-between;
 }
 
-.tradein__title-img {
+.tradein__headline {
     display: flex;
     align-items: center;
 }
@@ -714,7 +712,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding-top: 102px;
-    padding-bottom: 102px;
+    padding-bottom: 197px;
     margin-left: 134px;
 }
 
@@ -766,72 +764,89 @@ p {
 .section--form {
     background-image: url(../images/form-img.png);
     color: #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.section--form .container{
+.section--form .container {
     display: flex;
     justify-content: space-between;
     padding-top: 122px;
-    padding-bottom: 114px;
+    padding-bottom: 117px;
+}
+
+.connection {
+    margin-top: 7px;
+    margin-left: 47px;
+    margin-right: 175px;
 }
 
 .connection__title {
     font-family: "Parangon 530C";
     font-size: 30px;
+    margin: 0;
 }
 
 .connection__text {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
-    margin-top: 38px;
+    margin-top: 44px;
+    line-height: 27px;
 }
 
 .form {
     font-size: 18px;
-    margin-right: 13px;
     margin-top: 7px;
+    margin-right: 27px;
 
 }
 
 .form input {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     background: transparent;
     color: #fff;
+    font-size: 18px;
     padding-left: 18px;
-    width: 294.5px;
-    height: 46px;
+    width: 282.5px;
+    height: 41px;
     margin-right: -9px;
 }
 
-.form__name{
+.form__name {
     border: #fff solid 2px;
     border-width: 4px 4px 2px 4px;
 }
 
-.form__email{
+.form__email {
     border: #fff solid 2px;
     border-width: 2px 4px 2px 4px;
 }
 
 .form .form__email {
-    width: 612px;
+    width: 587px;
 }
 
 .form__textarea {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
     background: transparent;
     border: #fff solid 2px;
     color: #fff;
     padding-left: 18px;
     padding-top: 14px;
-    width: 610px;
+    width: 585px;
     border-width: 2px 4px 4px 4px;
 
 }
 
 .form__button {
+    font-family: "Parangon-530C";
+    font-size: 14px;
     background: #f6ae48;
     cursor: pointer;
     border: 0;
-    border-radius: 10px;
+    border-radius: 14px;
+    padding-top: 5px;
     width: 144px;
     height: 43px;
     color: #fff;
@@ -843,9 +858,12 @@ p {
 }
 
 .form__text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
+    margin-top: 9px;
     font-size: 14px;
 }
 
@@ -877,7 +895,7 @@ p {
 
 
 @media (max-width: 1300px) {
-    
+
     .card {
         width: 33%;
     }
@@ -897,7 +915,7 @@ p {
 
 @media (max-width: 1200px) {
 
-    .service{
+    .service {
         margin-top: 0;
     }
 
@@ -1020,6 +1038,7 @@ p {
 
     .container--care {
         padding-top: 40px;
+        padding-bottom: 40px;
         margin-left: 0px;
     }
 
@@ -1040,7 +1059,22 @@ p {
         left: -11px;
     }
 
+    .connection {
+        margin-left: 9px;
+        margin-right: 19px;
+    }
 
+    .form input {
+        width: 240px;
+    }
+
+    .form .form__email {
+        width: 502px;
+    }
+
+    .form__textarea {
+        width: 500px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1059,7 +1093,7 @@ p {
     .navbar {
         margin-right: 50px;
     }
-         
+
     .navbar__item a {
         letter-spacing: 0;
     }
@@ -1229,6 +1263,35 @@ p {
     .care__title:before {
         left: 0;
         right: 0;
+    }
+
+    .section--form .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section--form .container {
+        padding-top: 60px;
+        padding-bottom: 25px;
+    }
+
+    .connection__text{
+        margin-top: 20px;
+    }
+
+    .form{
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .form__textarea{
+        margin-left: 8px;
+    }
+
+    .form__text{
+        text-align: left;
+        margin-left: 111px;
+        margin-right: 102px;
     }
 
 
@@ -1434,6 +1497,15 @@ p {
     .adaptability__img img {
         width: 100%;
     }
+
+    .section--form .container{
+        padding-top: 30px;
+    }
+
+    .form__text{
+        margin-left: 16px;
+        margin-right: 8px;
+    }
 }
 
 
@@ -1477,7 +1549,7 @@ p {
         margin-bottom: 20px;
     }
 
-    .section--description h3{
+    .section--description h3 {
         text-align: center;
     }
 
@@ -1640,6 +1712,18 @@ p {
 
     .care__img img {
         max-width: 100%;
+    }
+
+    .form input{
+        width: 255px;
+    }
+
+    .form .form__email{
+        width: 255px;
+    }
+
+    .form__textarea{
+        width: 253px;
     }
 
 }
