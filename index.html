@@ -20,17 +20,17 @@
         </div>
         <div class="statistics">
             <div class="statistic">
-                <img class="statistic__icon icon icon--star">
+                <div class="statistic__icon icon icon--star"></div>
                 <div class="statistic__number">518</div>
                 <div class="statistic__title">оказанных услуг</div>
             </div>
             <div class="statistic">
-                <img class="statistic__icon icon icon--leaflet">
+                <div class="statistic__icon icon icon--leaflet"></div>
                 <div class="statistic__number">370</div>
                 <div class="statistic__title">проектов</div>
             </div>
             <div class="statistic">
-                <img class="statistic__icon icon icon--diamond">
+                <div class="statistic__icon icon icon--diamond"></div>
                 <div class="statistic__number">218</div>
                 <div class="statistic__title">постоянных клиентов</div>
             </div>
@@ -38,13 +38,15 @@
     </section>
 
     <div class="menu">
-        <ul class="navbar">
-            <li class="navbar__item"><a href="#">Главная</a></li>
-            <li class="navbar__item"><a href="#">О нас</a></li>
-            <li class="navbar__item"><a href="#">Услуги</a></li>
-            <li class="navbar__item"><a href="#">Наши работы</a></li>
-            <li class="navbar__item"><a href="#">Контакты</a></li>
-        </ul>
+        <div class="container">
+            <ul class="navbar">
+                <li class="navbar__item"><a href="#">Главная</a></li>
+                <li class="navbar__item"><a href="#">О нас</a></li>
+                <li class="navbar__item"><a href="#">Услуги</a></li>
+                <li class="navbar__item"><a href="#">Наши работы</a></li>
+                <li class="navbar__item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
     </div>
 
     <section class="section section--description">
@@ -107,8 +109,8 @@
                     <hr class="card__hr">
                     <div class="card__price">
                         <span class="card__cost">от 15000 руб</span>
-                        <a class="card__arrow card__arrow--blue" href="#"><img src="./assets/images/right-arrow-blue.png"
-                                alt=""></a>
+                        <a class="card__arrow card__arrow--blue" href="#"><img
+                                src="./assets/images/right-arrow-blue.png" alt=""></a>
                     </div>
                 </div>
                 <div class="card card--web-site">
@@ -116,8 +118,8 @@
                     <hr class="card__hr">
                     <div class="card__price">
                         <span class="card__cost">от 10000 руб</span>
-                        <a class="card__arrow card__arrow--white " href="#"><img src="./assets/images/right-arrow-white.png"
-                                alt=""></a>
+                        <a class="card__arrow card__arrow--white " href="#"><img
+                                src="./assets/images/right-arrow-white.png" alt=""></a>
                     </div>
                 </div>
                 <div class="card card--online-store">
@@ -125,8 +127,8 @@
                     <hr class="card__hr">
                     <div class="card__price">
                         <span class="card__cost">от 20000 руб</span>
-                        <a class="card__arrow card__arrow--white" href="#"><img src="./assets/images/right-arrow-white.png"
-                                alt=""></a>
+                        <a class="card__arrow card__arrow--white" href="#"><img
+                                src="./assets/images/right-arrow-white.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -156,16 +158,15 @@
             <h4 class="projects__title">последние проекты</h4>
         </div>
         <div class="projects__row projects__row--1">
-            <div><img src="./assets/images/sa.png" alt=""></div>
-            <div"><img src="./assets/images/d.png" alt=""></div>
-        </div>
+            <img src="./assets/images/sa.png" alt="">
+            <img src="./assets/images/d.png" alt="">
         </div>
 
         <div class="projects__row projects__row--2">
-            <div><img src="./assets/images/asc.png" alt=""></div>
-            <div><img src="./assets/images/rbk.png" alt=""></div>
-            <div><img src="./assets/images/geV2-1EUZhg.png" alt=""></div>
-            <div><img src="./assets/images/Realistic iMac Mockup1.png" alt=""></div>
+            <img src="./assets/images/asc.png" alt="">
+            <img src="./assets/images/rbk.png" alt="">
+            <img src="./assets/images/geV2-1EUZhg.png" alt="">
+            <img src="./assets/images/Realistic iMac Mockup1.png" alt="">
         </div>
         <div class="projects">
             <div class="projects__footer">
@@ -262,7 +263,8 @@
                 <input class="form__name" name="name" type="text" required placeholder="Ваше имя">
                 <input class="form__name" name="name" type="text" required placeholder="Ваша фамилия">
                 <input class="form__email" name="email" type="email" required placeholder="E-mail">
-                <textarea class="form__textarea" name="massage" id="" cols="30" rows="7" placeholder="Введите Ваше сообщение"></textarea>
+                <textarea class="form__textarea" name="massage" id="" cols="30" rows="7"
+                    placeholder="Введите Ваше сообщение"></textarea>
                 <div class="form__text">
                     <p>Наши специалисты свяжутся с вами как можно скорее</p>
                     <button class="form__button" type="submit">отправить</button>
